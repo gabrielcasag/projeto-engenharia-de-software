@@ -17,12 +17,12 @@ Os usuários são o público em geral.
  - XAMPP - servidor
 
 # Estrutura de diretório #
-
+  ```text
   projetoEngenhariaDeSoftware/
   ├──padroesAdotados/
   |  └──regras_de_verificacao&analise_de_requisitos.md
   ├──README.md
-  
+  ```
 # Integrantes do Grupo #
 
  - [Adriano Domingos Goulart](https://github.com/adrianodg)
