@@ -11,7 +11,7 @@ Os usuários são o público em geral.
 
 # Tecnologias utilizadas #
 
-PHP - para o back-end
-HTML e CSS - para o front-end
-MariaBD - banco de dados
-XAMPP - servidor
+ - PHP - para o back-end
+ - HTML e CSS - para o front-end
+ - MariaBD - banco de dados
+ - XAMPP - servidor
