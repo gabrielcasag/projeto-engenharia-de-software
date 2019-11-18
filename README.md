@@ -15,3 +15,16 @@ Os usuários são o público em geral.
  - HTML e CSS - para o front-end
  - MariaBD - banco de dados
  - XAMPP - servidor
+
+# Estrutura de diretório #
+
+  projetoEngenhariaDeSoftware/
+  ├──padroesAdotados/
+  |  └──regras_de_verificacao&analise_de_requisitos.md
+  ├──README.md
+  
+# Integrantes do Grupo #
+
+ - [Adriano Domingos Goulart](https://github.com/adrianodg)
+ - [Gabriel Gasperi Casgrande](https://github.com/gabrielcasag)
+ - [Matheus Galvao](https://github.com/magalfer)
