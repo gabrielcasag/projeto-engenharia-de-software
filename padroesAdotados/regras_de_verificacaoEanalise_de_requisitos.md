@@ -22,7 +22,7 @@
     **[RF-XX]** <Nome do requisito funcional>
 	    *Descrição detalhada do requisito*
 
-	**[NFN-XX]** <Nome do requisito não funcional>
+    **[NFN-XX]** <Nome do requisito não funcional>
 	    *Descrição detalhada do requisito*
-     
+            
     **[XX]** representa o *numero do requisito.*
