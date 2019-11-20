@@ -1,4 +1,4 @@
-<img src="docs/logo/tipleGlogo.png" width="300">
+<img src="docs/logo/tripleGlogo.png" width="300">
 <br>
 # Projeto de Engenharia de Software #
 
