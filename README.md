@@ -1,4 +1,4 @@
-<img src="docs/logo/tripleGlogo.png" width="300">
+<img src="docs/logo/logoPNG.png" width="300">
 
 Repositório destinado para o projeto da disciplina de Engenharia de Software da UFLA/2019
 
