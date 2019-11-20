@@ -1,5 +1,3 @@
-<img src="docs/logo/tripleGlogo.png" width="300">
-<br>
 # Regras de Verificação e Análise de Requisitos #
 
 
