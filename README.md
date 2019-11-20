@@ -1,3 +1,5 @@
+<img src="docs/logo/tipleGlogo.png" width="300">
+<br>
 # Projeto de Engenharia de Software #
 
 Repositório destinado para o projeto da disciplina de Engenharia de Software da UFLA/2019
