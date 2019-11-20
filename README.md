@@ -18,10 +18,15 @@ Os usuários são o público em geral.
 
 # Estrutura de diretório #
   ```text
-  projetoEngenhariaDeSoftware/
-  ├──padroesAdotados/
-  |  └──regras_de_verificacao&analise_de_requisitos.md
-  ├──README.md
+   projetoEngenhariaDeSoftware/
+   ├──docs/
+   |  └──logo/
+   |     └──tripleGlogo.png
+   |  └──padroes_adotados/
+   |     └──regras_de_verificacaoEanalise_de_requisitos.md
+   |  └──requisitos/
+   |     └──tripleGstore-Documento de Requisitos.doc
+   ├──README.md
   ```
 # Integrantes do Grupo #
 
