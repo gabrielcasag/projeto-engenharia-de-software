@@ -20,10 +20,10 @@
        
 2) Informação de referência
     
-    **[RF-XX]** (Nome do requisito funcional)
-   	*Descrição detalhada do requisito
+    **[RF-XX]** (Nome do requisito funcional) <br>
+   _Descrição detalhada do requisito_
       
-    **[NFN-XX]** (Nome do requisito não funcional)
-	    *Descrição detalhada do requisito
+    **[NFN-XX]** (Nome do requisito não funcional) <br>
+    _Descrição detalhada do requisito_
 		
     **[XX]** representa o *numero do requisito*
