@@ -20,7 +20,7 @@
        
 2) Informação de referência
     
-	**[RF-XX]** <Nome do requisito funcional>
+    **[RF-XX]** <Nome do requisito funcional>
 	    Descrição detalhada do requisito
       
     **[NFN-XX]** <Nome do requisito não funcional>
