@@ -10,7 +10,7 @@
        
 2) Manter definições atômicas;
 
-3) Utilizar descrições simples e diretas;
+3) Utilizar descrições de no máximo 30 palavras;
 
 ### Especificação e documentação ###
 
