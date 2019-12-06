@@ -28,8 +28,13 @@ Os usuários são o público em geral.
    |     └──tripleGstore-Documento de Requisitos.doc
    ├──README.md
   ```
+# Padrões de Commit #
+  
+  - CREATE + nome da pasta ou arquivo : quando está commitando uma pasta ou arquivo NOVO !
+  - UPDATE + nome da pasta ou arquivo : quando está commitando uma pasta ou arquivo JA EXISTENTE !
+  - DELETE + nome da pasta ou arquivo : quanto está removendo uma pasta ou arquivo !
+  
 # Integrantes do Grupo #
 
  - [Adriano Domingos Goulart](https://github.com/adrianodg)
  - [Gabriel Gasperi Casgrande](https://github.com/gabrielcasag)
- - [Matheus Galvao](https://github.com/magalfer)
