@@ -20,12 +20,33 @@ Os usuários são o público em geral.
   ```text
    projetoEngenhariaDeSoftware/
    ├──docs/
+   |  └──diagramas
+   |     └──diagramas_caso_uso
+   |        └──casoUso3Tabelas.asta
+   |        └──casoUso3Tabelas.png
+   |        └──casoUsoFornecedor.asta
+   |        └──casoUsoFornecedor.png
+   |     └──diagramas_de_classes
+   |        └──ddiagClasseGGG.asta
+   |     └──diagrama_implantacao
+   |        └──Diagrama de implantacao.png
+   |     └──diagrama_sequencia
+   |        └──Sequence Alterar Fornecedor.png
+   |        └──Sequence Alterar Produto.png
+   |        └──Sequence Buscar Fornecedor.png
+   |        └──Sequence Buscar Produto.png
+   |        └──Sequence Cadastrar Fornecedor.png
+   |        └──Sequence Cadastrar Produto.png
+   |        └──Sequence Login.png
+   |        └──Sequence Remover Fornecedor.png
+   |        └──Sequence Remover Produto.png           
    |  └──logo/
    |     └──tripleGlogo.png
+   |     └──logoPNG.png
    |  └──padroes_adotados/
    |     └──regras_de_verificacaoEanalise_de_requisitos.md
    |  └──requisitos/
-   |     └──tripleGstore-Documento de Requisitos.doc
+   |     └──tripleGstore-Documento de Requisitos.docx
    ├──README.md
   ```
 # Padrões de Commit #
