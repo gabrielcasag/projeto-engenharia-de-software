@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="/css/atualizarFornecedor.css">
     <meta charset="utf-8">
     <title>TripleG Store</title>
 </head>
+<center>
 <body>
-	<h2>Atualizar Fornecedor</h2>
-	<h4>Insira o ID do Fornecedor que deseja atualizar:</h4>
-	<label for="text">ID do Fornecedor : </label><br><br>
-	<input type="text" name="removerFuncionario" autocomplete="off"><br><br>
-	<button>ATUALIZAR</button>
+	
+	<div class="frame" >
+	    <form id="atualizarFornecedor" method="POST" action="/php/atualizarForm.php">
+
+			<h1>Atualizar Fornecedor</h1>
+			<br>
+			<h4>Insira o ID do Fornecedor que deseja atualizar</h4>
+			<br>
+			<label for="text">ID do Fornecedor : </label>
+			<br><br>
+			<input type="text" name="removerFuncionario" autocomplete="off">
+			<br><br>
+			<button type="submit">ATUALIZAR</button>
+		</form>
+	</div>
 </body>
+</center>	
 </html>

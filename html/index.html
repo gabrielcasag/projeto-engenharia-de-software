@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="/css/index.css">
     <meta charset="utf-8">
     <title>TripleG Store</title>
 </head>
 <center>
 <body>
-    <img src="../img/logoPNG.png" width="200" height="200" >
+    <img src="../img/logoPNG.png" width="250" height="250" >
     <div class="frame">
-        <form id="login" method="POST" action="login.php">
-            <h1 class="titulo">Login</h1>
-            <div class="input">
+        <form id="login" method="POST" action="/php/loginForm.php">
+            <h1 class="titulo">Login</h1><br>
             <div class="input">
                 <label for="text">Usuario</label><br>
-                <input type="text" name="usuario" autocomplete="off" required>
+                <input type="text" name="clogin" autocomplete="off" required>
             </div><br>
-                <div class="input">
+            <div class="input">
                 <label for="text">Senha</label><br>
-                <input type="password" name="senha" required>
+                <input type="password" name="csenha" required>
             </div><br>
+            <div id="botaoLogin">
+                <button type="submit" name="botao">Login</button>    
             </div>
-            <div id="buttonLogin">
-                <button type="submit" class="btn btn-primary" name="botao" >Login</button>    
         </form>
 
     </div>

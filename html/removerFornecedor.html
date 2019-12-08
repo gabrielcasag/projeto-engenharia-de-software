@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="/css/removerFornecedor.css">
     <meta charset="utf-8">
     <title>TripleG Store</title>
 </head>
+<center>
 <body>
-	<h2>Remover Fornecedor</h2>
-	<h4>Insira o ID do Fornecedor que deseja remover:</h4>
-	<label for="text">ID do Fornecedor : </label><br><br>
-	<input type="text" name="removerFuncionario" autocomplete="off"><br><br>
-	<button>REMOVER</button>
+	<div class="frame">
+		<form id="removerFornecedor" method="POST" action="/php/removerForm.php">
+			<h1>Remover Fornecedor</h1>
+			<br>
+			<h4>Insira o ID do Fornecedor que deseja remover</h4>
+			<br>
+			<label for="text">ID do Fornecedor : </label>
+			<br><br>
+			<input type="text" name="removerFuncionario" autocomplete="off">
+			<br><br>
+			<button type="submit">REMOVER</button>		
+		</form>
 </body>
+</center>
 </html>
