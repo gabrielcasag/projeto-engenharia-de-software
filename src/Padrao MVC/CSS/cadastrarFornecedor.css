@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+div.frame {
+    width: 500px;
+    border: 2px solid rgb(128, 128, 128);
+    padding: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30x;
+}
+
+form,
+label {
+  display: block;
+  padding: 5px;
+}
+
+form {
+    width: 330px;
+    margin: 10px;
+}
+
+label {
+  color:black;
+  text-align: right;
+}
+
+input {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+input[type=text] {
+    height: 25px;
+}
+
+input[type=tel] {
+    height: 25px;
+}
+
+input[type=email] {
+    height: 25px;
+}
+button[type=submit] {
+    font-size: 15px;
+    width:90px;
+    height:30px;
+}

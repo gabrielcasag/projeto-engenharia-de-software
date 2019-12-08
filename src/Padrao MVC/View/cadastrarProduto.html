@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="/css/cadastrarProduto.css">
+	<link rel="stylesheet" href="../CSS/cadastrarProduto.css">
 	<meta charset="utf-8">
 	<title>TripleG Store</title>
 </head>
 <center>
 <body>
 	<div class="frame">
-	<form id="cadastrarProduto" method="POST" action="/php/cadastrarProduto.php">
+	<form id="cadastrarProduto" method="POST" action="../Controller/cadastrarProduto.php">
 		<h1>  Cadastrar Produto </h1>
 		<br>
 		<label for="nome">
@@ -19,9 +19,6 @@
 		</label>
 		<label for="precocusto">
 			Preço Custo: <input type="number" step="0.01" name="precoc" required><br><br>
-		</label>
-		<label for="id">
-			ID do Fornecedor: <input type="number" name="idfor" required><br><br>
 		</label>
 		<label for="email">
 			E-mail: <input type="email" name="email"required><br><br>
