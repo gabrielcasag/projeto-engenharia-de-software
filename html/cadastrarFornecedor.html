@@ -11,13 +11,21 @@
 	<form id="cadastrarFornecedor" method="POST" action="/php/cadastrarForm.php">
 		<h1>  Cadastrar Fornecedor </h1>
 		<br>
-		Nome:	<input type="text" name="nome" required> <br><br>
-		CNPJ:	<input type="text" name="CNPJ" required><br><br>
-		Telefone: <input type="tel" name="telefone" required><br><br>
-		Email:	<input type="email" name="email"required><br><br>
+		<label for="nome">
+			Nome: <input type="text" name="nome" required> <br><br>
+		</label>
+		<label for="cnpj">
+			CNPJ:	<input type="text" name="CNPJ" required><br><br>
+		</label>
+		<label for="telefone">
+			Telefone: <input type="tel" name="telefone" required><br><br>
+		</label>
+		<label for="email">
+			Email:	<input type="email" name="email"required><br><br>
+		</label>
 		<button type="submit"> ENVIAR </button>
-
 	</form>
+	</div>
 </body>
 </center>
 </html>
