@@ -4,12 +4,12 @@
     include_once '../Persistence/ProdutoDAO.php';
     include_once '../Model/Estoque.php';
     include_once '../Persistence/EstoqueDAO.php';
-    $nome = $_POST['nome'];
-    $precoFinal = $_POST['precoFinal'];
-    $precoCusto = $_POST['precoCusto'];
-    $idFornecedor = $_POST['idFornecedor'];
-    $tamanhoProduto = $_Post['tamanhoProduto'];
-    $qtdeProduto = $_Post['qtdeProduto'];
+    $nome = $_POST['vnome'];
+    $precoFinal = $_POST['vprecoFinal'];
+    $precoCusto = $_POST['vprecoCusto'];
+    $idFornecedor = $_POST['vidFornecedor'];
+    $tamanhoProduto = $_Post['vtamanhoProduto'];
+    $qtdeProduto = $_Post['vqtdeProduto'];
     $conexao = new connection();
     $conexao = $conexao->getCon();
     $produto = new Produto(null, $nome, $precoFinal, $precoCusto, $idFornecedor);

@@ -14,8 +14,8 @@
                 echo "Erro ao cadastrar o produto: <br>".$conexao->error;
             }
         }
-        function buscar($nome, $conexao) {
-            $sql = "SELECT * FROM Produto WHERE nomeProduto = '" . $nome . "'";
+        function buscar($id, $conexao) {
+            $sql = "SELECT * FROM Produto WHERE idProduto = '" . $id . "'";
             $resultado = $conexao->query($sql);
             return $resultado;
         }
