@@ -4,9 +4,9 @@
 		var $nome;
 		var $cnpj;
         var $tel;
-        var $email
+        var $email;
 		
-		function __construct($vid, $vnome, $vcnpj, $vtel, $vmail) {
+		function __construct($vid, $vnome, $vcnpj, $vtel, $vemail) {
 			$this->id = $vid;
 			$this->nome = $vnome;
 			$this->cnpj = $vcnpj;

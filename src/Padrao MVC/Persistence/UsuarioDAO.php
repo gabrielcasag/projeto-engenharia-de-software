@@ -2,7 +2,7 @@
     class UsuarioDAO {
         function __construct() {}
         function salvar($usuario, $conexao) {
-            $sql = "INSERT INTO usuario(null, nomeUsuario, cpf, telUsuario, emailUsuario, endereco, loginUsuario, senha) VALUES ('".
+            $sql = "INSERT INTO usuario(idUsuario, nomeUsuario, cpf, telefoneUsuario, emailUsuario, enderecoUsuario, loginUsuario, senhaUsuario) VALUES ('".
                 $usuario->getId()."','".
                 $usuario->getNome()."','".
                 $usuario->getCpf()."','".

@@ -30,7 +30,7 @@ class Estoque {
 
     function getQtdeProduto(){
 		return $this->qtdeProduto;
-	}
+	  }
 
     function setIdProduto( $vid ){
 		$this->idProduto = $vid;
