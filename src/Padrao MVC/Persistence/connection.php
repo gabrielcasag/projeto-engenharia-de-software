@@ -1,9 +1,9 @@
 <?php
 class connection {
-	private $servername="localhost";
+	private $servername="127.0.0.1";
 	private $username="root";
 	private $password="";
-	private $bd="lojaCalcados";
+	private $bd="lojacalcados";
 	private $con=null;
 	
 	function __construct() {}

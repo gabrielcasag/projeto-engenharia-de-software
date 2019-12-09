@@ -17,22 +17,24 @@
     }
     else
     {
-        echo "<!DOCTYPE html>
-            <html>
-            <head>
-                <link rel='stylesheet' href='../CSS/cadastrarProduto.css'>
-                <meta charset='utf-8'>
-                <title>TripleG Store</title>
-            </head>
-            <center>
-            <body>
-                <div class='frame'>
-                    <br>
-                    <h1>Produto Nao Encontrado !!</h1>
-                </div>
-            </body>
-            </center>
-            </html>";
-    }
+        echo
+        "
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <link rel='stylesheet' href='../CSS/cadastrarProduto.css'>
+            <meta charset='utf-8'>
+            <title>TripleG Store</title>
+        </head>
+        <center>
+        <body>
+            <div class='frame'>
+                <br>
+                <h1>Produto Nao Encontrado !!</h1>
+            </div>
+        </body>
+        </center>
+        </html>
+        ";
 
-?>
+    }

@@ -1,10 +1,10 @@
 <?php
     class LoginDAO {
         function __construct() {}
-        function buscar($login, $senha, $conexao) {
-            $sql = "SELECT * FROM Usuario WHERE loginUsuario = '" . $login . "',
-            AND senhaUsuario = '" .$senha;
-            "'" . $resultado = $conexao->query($sql);
+        function validar($login, $senha, $conexao) {
+            
+            $resultado = $conexao->query("SELECT * FROM Usuario WHERE loginUsuario = '".$login."' AND senhaUsuario = '".$senha."'");
+
             return $resultado;
         }
     }
