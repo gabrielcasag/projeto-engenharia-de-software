@@ -4,22 +4,28 @@
     include_once '../Persistence/ProdutoDAO.php';
     include_once '../Model/Estoque.php';
     include_once '../Persistence/EstoqueDAO.php';
-    $nome = $_POST['vnome'];
-    $precoFinal = $_POST['vprecoFinal'];
-    $precoCusto = $_POST['vprecoCusto'];
-    $idFornecedor = $_POST['vidFornecedor'];
-    $tamanhoProduto = $_Post['vtamanhoProduto'];
-    $qtdeProduto = $_Post['vqtdeProduto'];
+
+    $nome = $_POST['cnome'];
+    $precoFinal = $_POST['cprecof'];
+    $precoCusto = $_POST['cprecoc'];
+    $idFornecedor = $_POST['cidf'];
+    $tamanhoProduto = $_Post['ctamanho'];
+    $qtdeProduto = $_Post['cqtde'];
+
     $conexao = new connection();
     $conexao = $conexao->getCon();
+
     $produto = new Produto(null, $nome, $precoFinal, $precoCusto, $idFornecedor);
     $produtoDAO = new ProdutoDAO();
+
     $produtoDAO->salvar($produto, $conexao);
 
     $idProduto = $produtoDAO->buscarNome($nome, $conexao);
+
     $estoque = new Estoque($idProduto, $idFornecedor,$tamanhoProduto, $qtdeProduto);
+
     $estoqueDAO = new EstoqueDAO();
     $estoqueDAO->salvar($estoque,$conexao);
 	
-	header('Location: ../index.php');
+	header('Location: ../View/paginaInicial.html');
 ?>

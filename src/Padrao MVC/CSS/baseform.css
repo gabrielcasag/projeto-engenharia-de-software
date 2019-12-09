@@ -26,9 +26,11 @@ input[type=text] {
 input[type=email] {
     height: 25px;
 }
+
 input[type=number] {
     height: 25px;
 }
+
 input[type=tel] {
     height: 25px;
 }

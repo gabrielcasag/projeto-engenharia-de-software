@@ -1,16 +1,16 @@
 <?php
     include_once '../Persistence/connection.php';
-    include_once '../Model/Produto.php';
-    include_once '../Persistence/ProdutoDAO.php';
+    include_once '../Model/Fornecedor.php';
+    include_once '../Persistence/FornecedorDAO.php';
 
     $id = $_POST['cid'];
 
     $conexao = new connection();
     $conexao = $conexao->getCon();
 
-    $produtoDAO = new ProdutoDAO();
+    $fornecedor = new FornecedorDAO();
 
-    $res = $produtoDAO->buscar($id,$conexao);
+    $res = $fornecedor->buscar($id,$conexao);
 
     if ($res->num_rows > 0 )
     {
@@ -19,29 +19,29 @@
         <!DOCTYPE html>
         <html>
         <head>
-            <link rel='stylesheet' href='../CSS/cadastrarProduto.css'>
+            <link rel='stylesheet' href='../CSS/cadastrarFornecedor.css'>
             <meta charset='utf-8'>
             <title>TripleG Store</title>
         </head>
         <center>
         <body>
             <div class='frame' >
-                <h1>Produto Encontrado</h1>
+                <h1>Fornecedor Encontrado</h1>
                 <br>
                 <label for='text'>
-                    ID : " .$res['idProduto'] . "
+                    ID : " .$res['idFornecedor'] . "
                 </label>
                 <label for='nome'>
-                    Nome: " .$res['nomeProduto'] ."
+                    Nome: " .$res['nomeFornecedor'] ."
                 </label>
-                <label for='precofinal'>
-                    Preço Final: " .$res['precoFinal'] ."
+                <label for='cnpj'>
+                    CNPJ: " .$res['cnpj'] ."
                 </label>
-                <label for='precocusto'>
-                    Preço Custo: " .$res['precoCusto'] ."
+                <label for='tel'>
+                    Telefone: " .$res['telFornecedor'] ."
                 </label>
-                <label for='id'>
-                    ID do Fornecedor: " .$res['idFornecedor'] ."
+                <label for='email'>
+                    Email: " .$res['emailFornecedor'] ."
                 </label>
             </div>
         </body>
@@ -64,7 +64,7 @@
         <body>
             <div class='frame'>
                 <br>
-                <h1>Produto Nao Encontrado !!</h1>
+                <h1>Fornecedor Nao Encontrado !!</h1>
             </div>
         </body>
         </center>
