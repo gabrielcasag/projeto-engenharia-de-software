@@ -10,7 +10,7 @@ class connection {
 	
 	function conectar() {
 		if($this->con == null) {
-			$this->con = mysqli_conect($this->servername, $this->username, $this->password, $this->bd);
+			$this->con = mysqli_connect($this->servername, $this->username, $this->password, $this->bd);
 		}
 		if(!$this->con) {
 			die("Conexão falhou. $con->conect_error");

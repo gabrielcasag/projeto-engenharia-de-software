@@ -11,7 +11,7 @@
     $conexao = $conexao->getCon();
     $fornecedor = new Fornecedor($id, $nome, $cnpj, $telefone, $email);
     $fornecedorDAO = new FornecedorDAO();
-    $fornecedorDAO->alterarFornecedor($id, $conexao);
+    $fornecedorDAO->alterarFornecedor($fornecedor, $conexao);
 	
 	header('Location: ../index.php');
 ?>

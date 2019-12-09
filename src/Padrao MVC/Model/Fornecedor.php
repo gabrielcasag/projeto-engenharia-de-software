@@ -15,7 +15,7 @@
 		}
 		
 		function imprimir() {
-			echo "id: ".($this->id)."<br />Nome: ".($this->nome)."<br />Cnpj: ".($this->cnpj)."<br />Telefone: ".($this->tel)."<br />Email: ".(this->email)."<br />";
+			echo "id: ".($this->id)."<br />Nome: ".($this->nome)."<br />Cnpj: ".($this->cnpj)."<br />Telefone: ".($this->tel)."<br />Email: ".($this->email)."<br />";
 		}
 		
 		function getId() {return $this->id;}

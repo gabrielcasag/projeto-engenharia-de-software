@@ -20,10 +20,16 @@
             return $resultado;
         }
 
+        function buscarNome($nome, $conexao) {
+            $sql = "SELECT * FROM Produto WHERE nomeProduto = '" . $nome . "'";
+            $resultado = $conexao->query($sql);
+            return $resultado;
+        }
+
         function removerProduto($id, $connect) {        
             $sql = "DELETE FROM Produto WHERE idProduto=".$id;
             
-            if ($connect->query($sql) === TRUE) {
+            if ($connect->query($sql) == TRUE) {
                 echo "<script> alert('Produto removido!')</script>";
             } else {
                 echo "Erro na remoção: " . $connect->error;
@@ -35,8 +41,8 @@
             $produto->getNome() . "' ,precoFinal='" . 
             $produto->getPrecoFinal() . "',precoCusto='" . 
             $produto->getPrecoCusto() ."' ,idFornecedor=". 
-            $produto->getIdFornecedor()."' WHERE idFornecedor=".$produto->getId();
-            if ($connect->query($sql) === TRUE) {
+            $produto->getIdFornecedor()."' WHERE idProduto=".$produto->getId();
+            if ($connect->query($sql) == TRUE) {
                 echo "<script> alert('Fornecedor alterado!')</script>";
             } else {
                 echo "Erro na alteracao: " . $connect->error;

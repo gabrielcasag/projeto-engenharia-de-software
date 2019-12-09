@@ -12,7 +12,7 @@
     $conexao = $conexao->getCon();
     $produto = new Produto($id, $nome, $precoFinal, $precoCusto, $idFornecedor);
     $produtoDAO = new ProdutoDAO();
-    $produtoDAO->removerProduto($id, $conexao);
+    $produtoDAO->alterarProduto($produto, $conexao);
 	
 	header('Location: ../index.php');
 ?>
