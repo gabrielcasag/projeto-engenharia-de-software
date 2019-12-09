@@ -14,8 +14,8 @@
                 echo "Erro ao cadastrar o fornecedor: <br>".$conexao->error;
             }
         }
-        function buscar($cnpj, $conexao) {
-            $sql = "SELECT * FROM Fornecedor WHERE cnpj = '" . $cnpj . "'";
+        function buscar($id, $conexao) {
+            $sql = "SELECT * FROM Fornecedor WHERE idFornecedor = '" . $id . "'";
             $resultado = $conexao->query($sql);
             return $resultado;
         }
@@ -23,7 +23,7 @@
         function removerFornecedor($id, $connect) {        
             $sql = "DELETE FROM Fornecedor WHERE idFornecedor=".$id;
             
-            if ($connect->query($sql) === TRUE) {
+            if ($connect->query($sql) == TRUE) {
                 echo "<script> alert('Fornecedor removido!')</script>";
             } else {
                 echo "Erro na remoção: " . $connect->error;
@@ -36,7 +36,7 @@
             $fornecedor->getCnpj() . "',telFornecedor='" . 
             $fornecedor->getTel() ."' ,emailFornecedor=". 
             $fornecedor->getEmail()."' WHERE idFornecedor=".$fornecedor->getId();
-            if ($connect->query($sql) === TRUE) {
+            if ($connect->query($sql) == TRUE) {
                 echo "<script> alert('Fornecedor alterado!')</script>";
             } else {
                 echo "Erro na alteracao: " . $connect->error;

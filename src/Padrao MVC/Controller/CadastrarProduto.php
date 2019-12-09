@@ -16,7 +16,7 @@
     $produtoDAO = new ProdutoDAO();
     $produtoDAO->salvar($produto, $conexao);
 
-    $idProduto = $produtoDAO->buscar($nome, $conexao);
+    $idProduto = $produtoDAO->buscarNome($nome, $conexao);
     $estoque = new Estoque($idProduto, $idFornecedor,$tamanhoProduto, $qtdeProduto);
     $estoqueDAO = new EstoqueDAO();
     $estoqueDAO->salvar($estoque,$conexao);
