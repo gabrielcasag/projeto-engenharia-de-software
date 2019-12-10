@@ -33,12 +33,12 @@ form {
 
 label {
   color:black;
-  text-align: right;
+  text-align:center;
 }
 
 input {
   display: inline-block;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 input[type=text] {
@@ -52,8 +52,4 @@ input[type=tel] {
 input[type=email] {
     height: 25px;
 }
-button[type=submit] {
-    font-size: 15px;
-    width:90px;
-    height:30px;
-}
+ 

@@ -52,8 +52,3 @@ input[type=number] {
 input[type=email] {
     height: 25px;
 }
-button[type=submit] {
-    font-size: 15px;
-    width:90px;
-    height:30px;
-}

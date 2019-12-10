@@ -9,12 +9,12 @@
     $email = $_POST['cemail'];
 
     $conexao = new connection();
-    $conexao = $conexao->getCon();
+    $link = $conexao->getCon();
 
     $fornecedor = new Fornecedor(null, $nome, $cnpj, $telefone, $email);
     $fornecedorDAO = new FornecedorDAO();
     
-    $fornecedorDAO->salvar($fornecedor, $conexao);
+    $fornecedorDAO->salvar($fornecedor, $link);
 	
 	header('Location: ../View/paginaInicial.html');
 ?>
