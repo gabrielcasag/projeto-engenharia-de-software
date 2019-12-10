@@ -3,7 +3,9 @@
         function __construct() {}
         function validar($login, $senha, $conexao) {
             
-            $resultado = $conexao->query("SELECT * FROM Usuario WHERE loginUsuario = '".$login."' AND senhaUsuario = '".$senha."'");
+            $sql = "SELECT * FROM Usuario WHERE loginUsuario = '".$login."' AND senhaUsuario = '".$senha."'";
+            
+            $resultado = mysqli_query($conexao,$sql);
 
             return $resultado;
         }

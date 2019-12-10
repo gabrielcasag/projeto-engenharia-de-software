@@ -2,13 +2,13 @@
     class FornecedorDAO {
         function __construct() {}
         function salvar($fornecedor, $conexao) {
-            $sql = "INSERT INTO Fornecedor(idFornecedor, nomeFornecedor, cnpj, telFornecedor, emailFornecedor) VALUES ('".
-                null.
+            $sql = "INSERT INTO Fornecedor(idFornecedor, nomeFornecedor, cnpj, telFornecedor, emailFornecedor) VALUES (null,'". 
                 $fornecedor->getNome()."','".
                 $fornecedor->getCnpj()."','".
-                $fornecedor->getTel()."',".
-                $fornecedor->getEmail()."','";
-            if ($conexao->query($sql) == TRUE) {
+                $fornecedor->getTel()."','".
+                $fornecedor->getEmail()."')";
+
+            if (mysqli_query($conexao,$sql) == TRUE) {
                 echo "<script>alert('fornecedor salvo')</script>";
             } else {
                 echo "Erro ao cadastrar o fornecedor: <br>".$conexao->error;

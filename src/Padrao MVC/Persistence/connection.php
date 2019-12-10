@@ -5,15 +5,13 @@ class connection {
 	private $password="";
 	private $bd="lojacalcados";
 	private $con=null;
-	
-	function __construct() {}
-	
-	function conectar() {
+		
+	function __construct() {
 		if($this->con == null) {
 			$this->con = mysqli_connect($this->servername, $this->username, $this->password, $this->bd);
 		}
 		if(!$this->con) {
-			die("Conexão falhou. $con->conect_error");
+			die("Conexão falhou");
 		}
 	}
 	
