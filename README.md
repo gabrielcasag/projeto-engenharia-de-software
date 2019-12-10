@@ -4,7 +4,7 @@ Repositório destinado para o projeto da disciplina de Engenharia de Software da
 
 # Descrição do produto #
 
-O sistema será de uma loja digital de calçados com nome fantasia de **"tripleG Store"** para venda online e controle de estoque. 
+O sistema será de uma loja digital de calçados com nome fantasia de **"tripleG Store"** para controle de estoque e de fornecedores. 
 As funcionalidades serão cadastrar, remover, modificar e buscar produtos. 
 Existirão operações de perfil de usuários, controle de vendas e de fornecedores disponíveis. 
 Os usuários são o público em geral.
@@ -54,6 +54,13 @@ Os usuários são o público em geral.
   - CREATE + nome da pasta ou arquivo : quando está commitando uma pasta ou arquivo NOVO !
   - UPDATE + nome da pasta ou arquivo : quando está commitando uma pasta ou arquivo JA EXISTENTE !
   - DELETE + nome da pasta ou arquivo : quanto está removendo uma pasta ou arquivo !
+  
+# Boas Práticas de Programação #
+ 
+  - Identar o código.
+  - Comentar o código.
+  - Nomear variáveis de maneira intuitiva ( um vetor que contém nomes, por exemplo, será associado a variável 'vetorNomes' ).
+  - Nomear métodos de maneira intuitiva ( um método que valida o login, por exemplo, terá nome 'validar()' )
   
 # Integrantes do Grupo #
 
