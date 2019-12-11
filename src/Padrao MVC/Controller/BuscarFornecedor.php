@@ -69,7 +69,7 @@
         </body>
         </center>
         </html>
-        "
+        ";
     }
     
     header('Location: ../View/paginaInical.html');
