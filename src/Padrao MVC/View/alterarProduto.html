@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="../CSS/cadastrarProduto.css">
+	<link rel="stylesheet" href="../CSS/cadastrar.css">
     <meta charset="utf-8">
     <title>TripleG Store</title>
 </head>
@@ -9,11 +9,11 @@
 <body>
 	
 	<div class="frame" >
-	    <form id="atualizarProduto" method="POST" action="../Controller/AlterarProduto.php">
+	    <form id="alterarProduto" method="POST" action="../Controller/AlterarProduto.php">
 
-			<h1>Atualizar Produto</h1>
+			<h1>Alterar Produto</h1>
 			<br>
-			<h4>Insira o ID do Produto que deseja atualizar</h4>
+			<h4>Insira o ID do Produto que deseja alterar</h4>
 			<br>
 			<label for="text">
 				ID : <input type="text" name="cid" autocomplete="off"><br><br>
@@ -34,8 +34,11 @@
 			<label for="quantidade">
 				Quantidade: <input type="number" name="cqtde" required><br><br>
 			</label>
+			<br>
 			<center>
-			<button type="submit">ATUALIZAR</button>
+			<button style="width:70px;height:30px" type="submit">ALTERAR</button>
+			<br><br><br>
+			<button style="width:70px;height:30px" onclick="location.href = '../View/paginaInicial.html';" class="float-left submit-button" >Voltar</button>
 			</center>
 		</form>
 	</div>
