@@ -1,8 +1,8 @@
 -- -----------------------------------------------------
 -- Schema lojaCalcados
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS lojaCalcados;
-USE lojaCalcados ;
+CREATE SCHEMA IF NOT EXISTS lojacalcados;
+USE lojacalcados ;
 
 -- -----------------------------------------------------
 -- Table Fornecedor
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS Produto (
   CONSTRAINT fk_Estoque_Fornecedor1
     FOREIGN KEY (idFornecedor)
     REFERENCES Fornecedor (idFornecedor)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
