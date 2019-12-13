@@ -20,10 +20,6 @@
 			$this->senha = $vsenha;
 		}
 		
-		function imprimir() {
-			echo "id: ".($this->id)."<br />Nome: ".($this->nome)."<br />cpf: ".($this->cpf)."<br />Telefone: ".($this->tel)."<br />Email: ".(this->email)."<br />Endereco: ".($this->endereco)."<br />Login: ".($this->login)."<br />Senha: ".(this->senha)."<br />;
-		}
-		
 		function getId() {return $this->id;}
 		function getNome() {return $this->nome;}
 		function getCpf() {return $this->cpf;}
@@ -32,14 +28,5 @@
 		function getEndereco() {return $this->endereco;}
         function getLogin() {return $this->login;}
         function getSenha() {return $this->senha;}
-		
-		function setid($vid) {$this->id = $vid;}
-		function setNome($vnome) {$this->nome = $vnome;}
-		function setCpf($vcpf) {$this->cpf = $vcpf;}
-        function setTel($vtel) {$this->tel = $vtel;}
-		function setEmail($vemail) {$this->email = $vemail;}
-		function setEndereco($vendereco) {$this->endereco = $vendereco;}
-        function setTel($vlogin) {$this->login = $vlogin;}
-        function setEmail($vsenha) {$this->email = $vsenha;}
 	}
 ?>

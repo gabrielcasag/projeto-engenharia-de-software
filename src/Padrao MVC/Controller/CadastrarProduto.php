@@ -9,8 +9,8 @@
     $precoFinal = $_POST['cprecof'];
     $precoCusto = $_POST['cprecoc'];
     $idFornecedor = $_POST['cidf'];
-    $tamanhoProduto = $_Post['ctamanho'];
-    $qtdeProduto = $_Post['cqtde'];
+    $tamanhoProduto = $_POST['ctamanho'];
+    $qtdeProduto = $_POST['cqtde'];
 
     $conexao = new connection();
     $conexao = $conexao->getCon();
@@ -27,5 +27,4 @@
     $estoqueDAO = new EstoqueDAO();
     $estoqueDAO->salvar($estoque,$conexao);
 	
-	header('Location: ../View/paginaInicial.html');
 ?>

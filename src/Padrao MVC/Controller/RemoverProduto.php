@@ -10,6 +10,4 @@
 
     $produtoDAO = new ProdutoDAO();
     $produtoDAO->removerProduto($id, $conexao);
-	
-	header('Location: ../View/paginaInicial.html');
 ?>

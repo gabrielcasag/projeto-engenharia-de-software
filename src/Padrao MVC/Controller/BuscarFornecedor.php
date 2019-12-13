@@ -33,7 +33,7 @@
                 <h1>Fornecedor encontrado!!</h1><br> ".
                 "<h2> ID: " .$obj["idFornecedor"]. " </h2:>".
                 "<h2> Nome: " .$obj["nomeFornecedor"]. " </h2>".
-                "<h2> Nome: " .$obj["emailFornecedor"]. " </h2>".
+                "<h2> Email: " .$obj["emailFornecedor"]. " </h2>".
                 "<br><br>
                 <label for='voltar'>
                 <button style='width:70px;height:30px' onclick='location.href = "."\"../View/paginaInicial.html\";'  class='float-left submit-button'>Voltar</button>

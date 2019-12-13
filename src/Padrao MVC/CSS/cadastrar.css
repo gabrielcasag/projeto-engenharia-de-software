@@ -12,7 +12,7 @@ body {
 }
 
 div.frame {
-    width: 500px;
+    width: 470px;
     border: 2px solid rgb(128, 128, 128);
     padding: 20px;
     justify-content: center;
@@ -52,8 +52,7 @@ input[type=number] {
 input[type=email] {
     height: 25px;
 }
-button[type=submit] {
-    font-size: 15px;
-    width:90px;
-    height:30px;
+
+input[type=tel] {
+    height: 25px;
 }

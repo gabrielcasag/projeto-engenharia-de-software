@@ -11,7 +11,8 @@
                 $usuario->getEndereco()."','"
                 $usuario->getLogin()."','"
                 $usuario->getSenha()."','";
-            if ($conexao->query($sql) == TRUE) {
+            mysqli_query($conexao,$sql);
+			if( mysqli_affected_rows( $conexao ) > 0){
                 echo "<script>alert('usuario salvo')</script>";
             } else {
                 echo "Erro ao cadastrar o usuario: <br>".$conexao->error;
@@ -19,7 +20,7 @@
         }
         function consultar($cpf, $conexao) {
             $sql = "SELECT * FROM Usuario WHERE cpf = '" . $cpf . "'";
-            $resultado = $conexao->query($sql);
+            $resultado = mysqli_query($conexao,$sql);
             return $resultado;
         }
     }

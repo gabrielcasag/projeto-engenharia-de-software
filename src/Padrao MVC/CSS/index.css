@@ -36,9 +36,3 @@ input[type=text] {
 input[type=password] {
     height: 25px;
 }
-
-button[type=submit] {
-    font-size: 15px;
-    width:90px;
-    height:30px;
-}

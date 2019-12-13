@@ -3,16 +3,17 @@
     include_once '../Model/Produto.php';
     include_once '../Persistence/ProdutoDAO.php';
 
+    //capturando dados 
     $id = $_POST['cid'];
-
+    
     $conexao = new connection();
     $conexao = $conexao->getCon();
 
     $produtoDAO = new ProdutoDAO();
 
-    $res = $produtoDAO->buscar($id,$conexao);
+    $resultado = $produtoDAO->buscar($id,$conexao);
 
-    if ($res->num_rows > 0 )
+    if  ( $obj = mysqli_fetch_assoc($resultado) )
     {
         echo 
         "
@@ -28,26 +29,18 @@
             <div class='frame' >
                 <h1>Produto Encontrado</h1>
                 <br>
-                <label for='text'>
-                    ID : " .$res['idProduto'] . "
-                </label>
-                <label for='nome'>
-                    Nome: " .$res['nomeProduto'] ."
-                </label>
-                <label for='precofinal'>
-                    Preço Final: " .$res['precoFinal'] ."
-                </label>
-                <label for='precocusto'>
-                    Preço Custo: " .$res['precoCusto'] ."
-                </label>
-                <label for='id'>
-                    ID do Fornecedor: " .$res['idFornecedor'] ."
-                </label>
+                <h3> ID : " .$obj['idProduto'] . "</h3>
+                <h3> Nome: " .$obj['nomeProduto'] ."</h3>
+                <h3> Preço Final: " .$obj['precoFinal'] ."</h3>
+                <h3> Preço Custo: " .$obj['precoCusto'] ."</h3>
+                <h3> ID do Fornecedor: " .$obj['idFornecedor'] ."</h3>
+                <br><br>
+                <button style='width:70px;height:30px' onclick='location.href = "."\"../View/paginaInicial.html\";'  class='float-left submit-button'>Voltar</button>
             </div>
         </body>
         </center>	
         </html>
-        "
+        ";
     }
     else
     {
@@ -65,12 +58,13 @@
             <div class='frame'>
                 <br>
                 <h1>Produto Nao Encontrado !!</h1>
+                <br><br>
+                <button style='width:70px;height:30px' onclick='location.href = "."\"../View/paginaInicial.html\";'  class='float-left submit-button'>Voltar</button>
             </div>
         </body>
         </center>
         </html>
-        "
+        ";
     }
     
-    header('Location: ../View/paginaInical.html');
 ?>
